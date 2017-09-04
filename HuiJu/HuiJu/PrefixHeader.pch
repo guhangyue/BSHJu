@@ -20,4 +20,5 @@
 #import "NSString+Crypt.h"
 #import "GBAlipayManager.h"
 #import "JSONS.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 #endif /* PrefixHeader_pch */
