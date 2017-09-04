@@ -50,6 +50,9 @@
                                                     <constraint firstAttribute="width" constant="20" id="Yq7-GW-ySz"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="Call"/>
+                                                <connections>
+                                                    <action selector="callingAction:forEvent:" destination="txY-qK-bv7" eventType="touchUpInside" id="gTx-r4-hEP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha3-eY-hDE">
                                                 <rect key="frame" x="49" y="36" width="229" height="28"/>
@@ -57,6 +60,9 @@
                                                 <state key="normal" title="无锡市南长区阳光城市花园B区76号1楼">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="addressAction:forEvent:" destination="txY-qK-bv7" eventType="touchUpInside" id="Jgq-dB-AHm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -278,6 +284,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressBtn" destination="Ha3-eY-hDE" id="zgj-tq-xvD"/>
+                        <outlet property="callingBtn" destination="vgb-JR-qmG" id="1pr-Lf-QSE"/>
+                        <outlet property="clubIntroduceLbl" destination="4QD-Xr-SCF" id="LwJ-iG-Kkx"/>
+                        <outlet property="clubMemberLbl" destination="vP8-ZR-Vsb" id="EeB-KC-gfT"/>
+                        <outlet property="clubNameLbl" destination="jgv-al-Eww" id="myQ-2u-6ZB"/>
+                        <outlet property="clubPersonLbl" destination="L1K-0X-RH2" id="uvc-Wb-7Wc"/>
+                        <outlet property="clubSiteLbl" destination="pPg-k1-8pz" id="MTi-eb-FnN"/>
+                        <outlet property="clubTimeLbl" destination="gzy-O0-A58" id="NaT-aF-Oor"/>
+                        <outlet property="eLogoImage" destination="cWA-qw-laO" id="0r0-I4-UAJ"/>
+                        <outlet property="eNameLbl" destination="yWe-wR-GEU" id="jTz-8m-iTs"/>
+                        <outlet property="priceLbl" destination="lP9-rV-JsG" id="b0T-Gk-Pog"/>
+                        <outlet property="saleCountLbl" destination="b50-Cq-Kew" id="MGQ-on-99R"/>
                         <segue destination="9Zu-OG-LH5" kind="push" id="jR1-vn-IJK"/>
                         <segue destination="7HK-Sc-3SH" kind="push" id="424-OX-C1w"/>
                     </connections>
@@ -575,10 +593,10 @@
             </objects>
             <point key="canvasLocation" x="809" y="112"/>
         </scene>
-        <!--View Controller-->
+        <!--Pay View Controller-->
         <scene sceneID="NzE-PM-osl">
             <objects>
-                <viewController id="txt-9C-2dA" sceneMemberID="viewController">
+                <viewController id="txt-9C-2dA" customClass="PayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jSE-cH-4tW"/>
                         <viewControllerLayoutGuide type="bottom" id="nGR-Lu-is9"/>
@@ -597,10 +615,10 @@
             </objects>
             <point key="canvasLocation" x="1554" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="aWo-7E-Sbc">
             <objects>
-                <viewController id="7HK-Sc-3SH" sceneMemberID="viewController">
+                <viewController id="7HK-Sc-3SH" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kmw-se-AFg"/>
                         <viewControllerLayoutGuide type="bottom" id="8Qw-Pm-nZb"/>
@@ -616,10 +634,10 @@
             </objects>
             <point key="canvasLocation" x="455" y="879"/>
         </scene>
-        <!--View Controller-->
+        <!--Zhi Fu Bao View Controller-->
         <scene sceneID="7WX-Fg-xFW">
             <objects>
-                <viewController id="c7w-Hj-8Aq" sceneMemberID="viewController">
+                <viewController id="c7w-Hj-8Aq" customClass="ZhiFuBaoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SOt-m3-VKz"/>
                         <viewControllerLayoutGuide type="bottom" id="AmT-TW-rS6"/>
@@ -641,6 +659,6 @@
         <image name="地址" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wmk-mv-alp"/>
+        <segue reference="424-OX-C1w"/>
     </inferredMetricsTieBreakers>
 </document>
