@@ -9,6 +9,17 @@
 #import "TiYanViewController.h"
 
 @interface TiYanViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *clubNameLbl;
+@property (weak, nonatomic) IBOutlet UIButton *clubAddressbBtn;
+- (IBAction)clubAddressbAction:(UIButton *)sender forEvent:(UIEvent *)event;
+@property (weak, nonatomic) IBOutlet UIButton *callingBtn;
+- (IBAction)callingAction:(UIButton *)sender forEvent:(UIEvent *)event;
+@property (weak, nonatomic) IBOutlet UILabel *saleCountLbl;
+@property (weak, nonatomic) IBOutlet UILabel *eNameLbl;
+@property (weak, nonatomic) IBOutlet UILabel *priceLbl;
+@property (weak, nonatomic) IBOutlet UILabel *orginPriceLbl;
+@property (weak, nonatomic) IBOutlet UIButton *payBtn;
+- (IBAction)payAction:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end
 
@@ -34,4 +45,10 @@
 }
 */
 
+- (IBAction)clubAddressbAction:(UIButton *)sender forEvent:(UIEvent *)event {
+}
+- (IBAction)callingAction:(UIButton *)sender forEvent:(UIEvent *)event {
+}
+- (IBAction)payAction:(UIButton *)sender forEvent:(UIEvent *)event {
+}
 @end

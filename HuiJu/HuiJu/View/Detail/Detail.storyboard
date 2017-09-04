@@ -335,6 +335,9 @@
                                                 <rect key="frame" x="298" y="46" width="62" height="30"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="立即下单"/>
+                                                <connections>
+                                                    <action selector="payAction:forEvent:" destination="9Zu-OG-LH5" eventType="touchUpInside" id="r4Y-Kd-zbC"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莫梵瑜伽-体验卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slw-Gc-5MG">
                                                 <rect key="frame" x="15" y="10" width="136.5" height="21.5"/>
@@ -399,6 +402,9 @@
                                                     <constraint firstAttribute="height" constant="20" id="rwx-3x-HiG"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="Call"/>
+                                                <connections>
+                                                    <action selector="callingAction:forEvent:" destination="9Zu-OG-LH5" eventType="touchUpInside" id="sMY-7b-Yzl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2p-gD-B8c">
                                                 <rect key="frame" x="49" y="36" width="229" height="28"/>
@@ -406,6 +412,9 @@
                                                 <state key="normal" title="无锡市南长区阳光城市花园B区76号1楼">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="clubAddressbAction:forEvent:" destination="9Zu-OG-LH5" eventType="touchUpInside" id="I5y-nX-3tf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -585,6 +594,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="7DU-7Z-olC"/>
                     <connections>
+                        <outlet property="callingBtn" destination="ACX-Rb-NCR" id="FVn-nJ-jod"/>
+                        <outlet property="clubAddressbBtn" destination="o2p-gD-B8c" id="FPB-Aj-dJW"/>
+                        <outlet property="clubNameLbl" destination="43R-AA-yhT" id="3yw-Oi-mMO"/>
+                        <outlet property="eNameLbl" destination="slw-Gc-5MG" id="Lst-fl-db6"/>
+                        <outlet property="orginPriceLbl" destination="v47-HG-SCZ" id="F7d-or-LmC"/>
+                        <outlet property="payBtn" destination="Mcv-4r-d7p" id="7En-YA-D2Q"/>
+                        <outlet property="priceLbl" destination="hmE-ff-4xy" id="aNP-f8-q04"/>
+                        <outlet property="saleCountLbl" destination="z2g-XG-Wqu" id="Rju-qe-SkU"/>
                         <segue destination="7HK-Sc-3SH" kind="push" id="wmk-mv-alp"/>
                         <segue destination="txt-9C-2dA" kind="push" id="U0I-YI-4XZ"/>
                     </connections>
@@ -659,6 +676,6 @@
         <image name="地址" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="424-OX-C1w"/>
+        <segue reference="wmk-mv-alp"/>
     </inferredMetricsTieBreakers>
 </document>
