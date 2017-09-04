@@ -36,12 +36,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无锡市南长区阳光城市花园B区76号1楼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpl-99-BMc">
-                                                <rect key="frame" x="44" y="41.5" width="229" height="16"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="地址" translatesAutoresizingMaskIntoConstraints="NO" id="D5W-IX-A3A">
                                                 <rect key="frame" x="13" y="39" width="21" height="21"/>
                                                 <constraints>
@@ -57,18 +51,25 @@
                                                 </constraints>
                                                 <state key="normal" title="Button" image="Call"/>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha3-eY-hDE">
+                                                <rect key="frame" x="49" y="36" width="229" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" title="无锡市南长区阳光城市花园B区76号1楼">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="vgb-JR-qmG" firstAttribute="centerY" secondItem="Ha3-eY-hDE" secondAttribute="centerY" id="4mm-Xk-Jkv"/>
                                             <constraint firstItem="D5W-IX-A3A" firstAttribute="leading" secondItem="MVg-GG-GNk" secondAttribute="leading" constant="13" id="7zj-NS-7Xf"/>
-                                            <constraint firstItem="vgb-JR-qmG" firstAttribute="centerY" secondItem="Lpl-99-BMc" secondAttribute="centerY" id="8pl-yR-zDH"/>
                                             <constraint firstItem="jgv-al-Eww" firstAttribute="top" secondItem="MVg-GG-GNk" secondAttribute="top" constant="10" id="CQF-4g-KHN"/>
-                                            <constraint firstItem="Lpl-99-BMc" firstAttribute="centerY" secondItem="D5W-IX-A3A" secondAttribute="centerY" id="DsL-NK-4Af"/>
                                             <constraint firstItem="jgv-al-Eww" firstAttribute="leading" secondItem="MVg-GG-GNk" secondAttribute="leading" constant="15" id="JpC-l0-lFq"/>
                                             <constraint firstAttribute="bottom" secondItem="D5W-IX-A3A" secondAttribute="bottom" constant="10" id="OuT-7c-ynY"/>
+                                            <constraint firstItem="Ha3-eY-hDE" firstAttribute="leading" secondItem="D5W-IX-A3A" secondAttribute="trailing" constant="15" id="ReU-7k-oHw"/>
                                             <constraint firstAttribute="height" constant="70" id="UwL-6G-7CN"/>
+                                            <constraint firstItem="Ha3-eY-hDE" firstAttribute="centerY" secondItem="D5W-IX-A3A" secondAttribute="centerY" id="XtU-rm-EXo"/>
                                             <constraint firstAttribute="trailing" secondItem="vgb-JR-qmG" secondAttribute="trailing" constant="15" id="ehf-c8-Ypv"/>
-                                            <constraint firstItem="Lpl-99-BMc" firstAttribute="leading" secondItem="D5W-IX-A3A" secondAttribute="trailing" constant="10" id="xhw-hF-QnW"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-9h-UHB">
@@ -278,16 +279,17 @@
                     </view>
                     <connections>
                         <segue destination="9Zu-OG-LH5" kind="push" id="jR1-vn-IJK"/>
+                        <segue destination="7HK-Sc-3SH" kind="push" id="424-OX-C1w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmB-lN-XEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="88.799999999999997" y="111.99400299850076"/>
         </scene>
-        <!--View Controller-->
+        <!--Ti Yan View Controller-->
         <scene sceneID="rDv-X1-7Ck">
             <objects>
-                <viewController id="9Zu-OG-LH5" sceneMemberID="viewController">
+                <viewController id="9Zu-OG-LH5" customClass="TiYanViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bPc-6H-00Z"/>
                         <viewControllerLayoutGuide type="bottom" id="DN6-8C-HSq"/>
@@ -365,12 +367,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无锡市南长区阳光城市花园B区76号1楼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oc-X0-gVU">
-                                                <rect key="frame" x="44" y="41.5" width="229" height="16"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="地址" translatesAutoresizingMaskIntoConstraints="NO" id="SQL-AX-i7M">
                                                 <rect key="frame" x="13" y="39" width="21" height="21"/>
                                                 <constraints>
@@ -386,17 +382,24 @@
                                                 </constraints>
                                                 <state key="normal" title="Button" image="Call"/>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2p-gD-B8c">
+                                                <rect key="frame" x="49" y="36" width="229" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" title="无锡市南长区阳光城市花园B区76号1楼">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="o2p-gD-B8c" firstAttribute="centerY" secondItem="SQL-AX-i7M" secondAttribute="centerY" id="2yd-2H-nWw"/>
+                                            <constraint firstItem="o2p-gD-B8c" firstAttribute="leading" secondItem="SQL-AX-i7M" secondAttribute="trailing" constant="15" id="7dB-yq-Wlq"/>
                                             <constraint firstAttribute="height" constant="70" id="8g4-yL-us9"/>
-                                            <constraint firstItem="ACX-Rb-NCR" firstAttribute="centerY" secondItem="1Oc-X0-gVU" secondAttribute="centerY" id="Ds8-lc-ZHy"/>
+                                            <constraint firstItem="ACX-Rb-NCR" firstAttribute="centerY" secondItem="o2p-gD-B8c" secondAttribute="centerY" id="Kog-s8-c2c"/>
                                             <constraint firstItem="43R-AA-yhT" firstAttribute="leading" secondItem="1gI-i6-neR" secondAttribute="leading" constant="15" id="PkK-6x-Gt3"/>
                                             <constraint firstAttribute="trailing" secondItem="ACX-Rb-NCR" secondAttribute="trailing" constant="15" id="Zhe-rr-xZE"/>
-                                            <constraint firstItem="1Oc-X0-gVU" firstAttribute="leading" secondItem="SQL-AX-i7M" secondAttribute="trailing" constant="10" id="dcq-Ne-xBT"/>
                                             <constraint firstItem="SQL-AX-i7M" firstAttribute="leading" secondItem="1gI-i6-neR" secondAttribute="leading" constant="13" id="pwK-n7-YzE"/>
                                             <constraint firstAttribute="bottom" secondItem="SQL-AX-i7M" secondAttribute="bottom" constant="10" id="rEg-WM-jPQ"/>
-                                            <constraint firstItem="1Oc-X0-gVU" firstAttribute="centerY" secondItem="SQL-AX-i7M" secondAttribute="centerY" id="tXK-kk-So6"/>
                                             <constraint firstItem="43R-AA-yhT" firstAttribute="top" secondItem="1gI-i6-neR" secondAttribute="top" constant="10" id="z58-j5-6HH"/>
                                         </constraints>
                                     </view>
@@ -563,14 +566,81 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7DU-7Z-olC"/>
+                    <connections>
+                        <segue destination="7HK-Sc-3SH" kind="push" id="wmk-mv-alp"/>
+                        <segue destination="txt-9C-2dA" kind="push" id="U0I-YI-4XZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APQ-lj-M7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="720.79999999999995" y="112.89355322338831"/>
+            <point key="canvasLocation" x="809" y="112"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NzE-PM-osl">
+            <objects>
+                <viewController id="txt-9C-2dA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jSE-cH-4tW"/>
+                        <viewControllerLayoutGuide type="bottom" id="nGR-Lu-is9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="egV-7I-qtI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="j4x-qD-Nhk"/>
+                    <connections>
+                        <segue destination="c7w-Hj-8Aq" kind="push" id="S7K-UV-5PG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoC-qp-OPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aWo-7E-Sbc">
+            <objects>
+                <viewController id="7HK-Sc-3SH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kmw-se-AFg"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Qw-Pm-nZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zhc-P8-yQj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bez-8r-TTx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzL-KQ-DFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="879"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7WX-Fg-xFW">
+            <objects>
+                <viewController id="c7w-Hj-8Aq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SOt-m3-VKz"/>
+                        <viewControllerLayoutGuide type="bottom" id="AmT-TW-rS6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ND2-Wx-TRd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="brV-hS-1nI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEx-s2-JIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553" y="878"/>
         </scene>
     </scenes>
     <resources>
         <image name="Call" width="48" height="48"/>
         <image name="地址" width="48" height="48"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wmk-mv-alp"/>
+    </inferredMetricsTieBreakers>
 </document>
