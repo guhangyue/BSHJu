@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88022E541F5D00BE005CF9F7 /* YeMianTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88022E531F5D00BE005CF9F7 /* YeMianTableViewCell.m */; };
+		88022E571F5D00E3005CF9F7 /* experienceCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88022E561F5D00E3005CF9F7 /* experienceCellTableViewCell.m */; };
+		88022E5A1F5D10D5005CF9F7 /* ShouYe.m in Sources */ = {isa = PBXBuildFile; fileRef = 88022E591F5D10D5005CF9F7 /* ShouYe.m */; };
 		8821186B1F5937CA003258C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8821186A1F5937CA003258C6 /* main.m */; };
 		8821186E1F5937CA003258C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8821186D1F5937CA003258C6 /* AppDelegate.m */; };
 		882118741F5937CB003258C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882118721F5937CA003258C6 /* Main.storyboard */; };
@@ -90,6 +93,12 @@
 		0AB33B9E0AB74128C263A75F /* Pods-HuiJu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuiJu.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuiJu/Pods-HuiJu.release.xcconfig"; sourceTree = "<group>"; };
 		16A9992F1A03833299CB8613 /* Pods-HuiJu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuiJu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuiJu/Pods-HuiJu.debug.xcconfig"; sourceTree = "<group>"; };
 		5C75145C4FBF4BD7AF8AF12F /* libPods-HuiJu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HuiJu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88022E521F5D00BE005CF9F7 /* YeMianTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YeMianTableViewCell.h; sourceTree = "<group>"; };
+		88022E531F5D00BE005CF9F7 /* YeMianTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YeMianTableViewCell.m; sourceTree = "<group>"; };
+		88022E551F5D00E3005CF9F7 /* experienceCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = experienceCellTableViewCell.h; sourceTree = "<group>"; };
+		88022E561F5D00E3005CF9F7 /* experienceCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = experienceCellTableViewCell.m; sourceTree = "<group>"; };
+		88022E581F5D10D5005CF9F7 /* ShouYe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShouYe.h; sourceTree = "<group>"; };
+		88022E591F5D10D5005CF9F7 /* ShouYe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShouYe.m; sourceTree = "<group>"; };
 		882118661F5937CA003258C6 /* HuiJu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuiJu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8821186A1F5937CA003258C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8821186C1F5937CA003258C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -250,6 +259,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		88022E511F5CFFA6005CF9F7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				88022E521F5D00BE005CF9F7 /* YeMianTableViewCell.h */,
+				88022E531F5D00BE005CF9F7 /* YeMianTableViewCell.m */,
+				88022E551F5D00E3005CF9F7 /* experienceCellTableViewCell.h */,
+				88022E561F5D00E3005CF9F7 /* experienceCellTableViewCell.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		8821185D1F5937CA003258C6 = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +406,8 @@
 				882118B31F5938E5003258C6 /* HuiJu.xcdatamodeld */,
 				882118B51F5938E5003258C6 /* Order.h */,
 				882118B61F5938E5003258C6 /* Order.m */,
+				88022E581F5D10D5005CF9F7 /* ShouYe.h */,
+				88022E591F5D10D5005CF9F7 /* ShouYe.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -393,6 +415,7 @@
 		882118E01F5938E5003258C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88022E511F5CFFA6005CF9F7 /* Main */,
 				8862D0961F5A99DC00D828E6 /* Shezhi */,
 				8862D08C1F5A995200D828E6 /* Sign */,
 				8821198F1F594791003258C6 /* Detail */,
@@ -779,6 +802,7 @@
 				882119611F593BBF003258C6 /* qrencode.m in Sources */,
 				882118E41F5938E5003258C6 /* SKTagButton.m in Sources */,
 				882119461F593B6F003258C6 /* RSADataVerifier.m in Sources */,
+				88022E571F5D00E3005CF9F7 /* experienceCellTableViewCell.m in Sources */,
 				882118E71F5938E5003258C6 /* HuiJu.xcdatamodeld in Sources */,
 				882119641F593BBF003258C6 /* rscode.m in Sources */,
 				882119601F593BBF003258C6 /* mask.m in Sources */,
@@ -795,9 +819,11 @@
 				882118E11F5938E5003258C6 /* HMSegmentedControl.m in Sources */,
 				8821186E1F5937CA003258C6 /* AppDelegate.m in Sources */,
 				882118E81F5938E5003258C6 /* Order.m in Sources */,
+				88022E5A1F5D10D5005CF9F7 /* ShouYe.m in Sources */,
 				882119471F593B6F003258C6 /* AppAPIClient.m in Sources */,
 				882118E51F5938E5003258C6 /* SKTagView.m in Sources */,
 				8821194C1F593B6F003258C6 /* RequestAPI.m in Sources */,
+				88022E541F5D00BE005CF9F7 /* YeMianTableViewCell.m in Sources */,
 				8862D0951F5A99BB00D828E6 /* SignUpViewController.m in Sources */,
 				882119401F593B6F003258C6 /* DataSigner.m in Sources */,
 				8821194E1F593B6F003258C6 /* UIImage+MDQRCode.m in Sources */,

@@ -32,11 +32,11 @@
                                 <rect key="frame" x="0.0" y="214" width="375" height="404"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="IT7-Qd-ryG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YeMianCell" rowHeight="150" id="IT7-Qd-ryG" customClass="YeMianTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IT7-Qd-ryG" id="ZWv-7K-54F">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-Dl-0Z1">
@@ -86,12 +86,18 @@
                                                 <constraint firstAttribute="trailing" secondItem="Pby-j3-edo" secondAttribute="trailing" id="veI-aA-Mex"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="address" destination="LDL-M6-Gon" id="tNf-sK-Kxm"/>
+                                            <outlet property="distance" destination="1J9-PQ-Iue" id="SZG-Ee-Cgj"/>
+                                            <outlet property="image" destination="fUT-Dl-0Z1" id="dth-nO-EhM"/>
+                                            <outlet property="name" destination="HrM-8c-hrr" id="Tof-7L-0xZ"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="dyl-KZ-dkZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="experienceCell" rowHeight="100" id="dyl-KZ-dkZ" customClass="experienceCellTableViewCell">
                                         <rect key="frame" x="0.0" y="178" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dyl-KZ-dkZ" id="NXn-cP-wX2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Tv-B5-Wrx">
@@ -139,8 +145,18 @@
                                                 <constraint firstAttribute="bottom" secondItem="2Tv-B5-Wrx" secondAttribute="bottom" constant="10" id="v9T-Po-fpz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryName" destination="U3Q-9E-AwA" id="UHK-9v-LyR"/>
+                                            <outlet property="logo" destination="2Tv-B5-Wrx" id="CNC-uy-yJI"/>
+                                            <outlet property="name" destination="3rz-V3-aON" id="CTt-9B-MgP"/>
+                                            <outlet property="price" destination="Dv8-Rk-Ndj" id="uPf-SL-B73"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sX1-Ub-lv6" id="crR-uI-ZE7"/>
+                                    <outlet property="delegate" destination="sX1-Ub-lv6" id="J8R-CW-IXw"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -156,6 +172,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="PAu-Jq-UT9"/>
                     <connections>
+                        <outlet property="HomeTableView" destination="tt7-Pm-S46" id="HBy-0N-pa4"/>
                         <segue destination="Y3b-iV-imK" kind="show" id="RlF-Mt-CNn"/>
                     </connections>
                 </viewController>
