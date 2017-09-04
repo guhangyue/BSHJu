@@ -69,6 +69,10 @@
 		8862D0921F5A99AB00D828E6 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862D0911F5A99AB00D828E6 /* SignInViewController.m */; };
 		8862D0951F5A99BB00D828E6 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862D0941F5A99BB00D828E6 /* SignUpViewController.m */; };
 		8862D0981F5A99EC00D828E6 /* SheZhi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8862D0971F5A99EC00D828E6 /* SheZhi.storyboard */; };
+		B24C64021F5CF84800A76F39 /* TiYanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C64011F5CF84800A76F39 /* TiYanViewController.m */; };
+		B24C64051F5D1EF500A76F39 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C64041F5D1EF500A76F39 /* MapViewController.m */; };
+		B24C64081F5D1F2800A76F39 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C64071F5D1F2800A76F39 /* PayViewController.m */; };
+		B24C640B1F5D1F4400A76F39 /* ZhiFuBaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C640A1F5D1F4400A76F39 /* ZhiFuBaoViewController.m */; };
 		B990D25BAC48C15119EEBA99 /* libPods-HuiJu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75145C4FBF4BD7AF8AF12F /* libPods-HuiJu.a */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +211,14 @@
 		8862D0931F5A99BB00D828E6 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		8862D0941F5A99BB00D828E6 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		8862D0971F5A99EC00D828E6 /* SheZhi.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SheZhi.storyboard; sourceTree = "<group>"; };
+		B24C64001F5CF84800A76F39 /* TiYanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiYanViewController.h; sourceTree = "<group>"; };
+		B24C64011F5CF84800A76F39 /* TiYanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiYanViewController.m; sourceTree = "<group>"; };
+		B24C64031F5D1EF500A76F39 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B24C64041F5D1EF500A76F39 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		B24C64061F5D1F2800A76F39 /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		B24C64071F5D1F2800A76F39 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		B24C64091F5D1F4400A76F39 /* ZhiFuBaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiFuBaoViewController.h; sourceTree = "<group>"; };
+		B24C640A1F5D1F4400A76F39 /* ZhiFuBaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiFuBaoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +527,14 @@
 			children = (
 				882119801F5946D1003258C6 /* DetailViewController.h */,
 				882119811F5946D1003258C6 /* DetailViewController.m */,
+				B24C64001F5CF84800A76F39 /* TiYanViewController.h */,
+				B24C64011F5CF84800A76F39 /* TiYanViewController.m */,
+				B24C64031F5D1EF500A76F39 /* MapViewController.h */,
+				B24C64041F5D1EF500A76F39 /* MapViewController.m */,
+				B24C64061F5D1F2800A76F39 /* PayViewController.h */,
+				B24C64071F5D1F2800A76F39 /* PayViewController.m */,
+				B24C64091F5D1F4400A76F39 /* ZhiFuBaoViewController.h */,
+				B24C640A1F5D1F4400A76F39 /* ZhiFuBaoViewController.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -818,6 +838,7 @@
 				8821198D1F5946DD003258C6 /* HomeViewController.m in Sources */,
 				882118E11F5938E5003258C6 /* HMSegmentedControl.m in Sources */,
 				8821186E1F5937CA003258C6 /* AppDelegate.m in Sources */,
+				B24C640B1F5D1F4400A76F39 /* ZhiFuBaoViewController.m in Sources */,
 				882118E81F5938E5003258C6 /* Order.m in Sources */,
 				88022E5A1F5D10D5005CF9F7 /* ShouYe.m in Sources */,
 				882119471F593B6F003258C6 /* AppAPIClient.m in Sources */,
@@ -832,13 +853,16 @@
 				882119421F593B6F003258C6 /* MD5DataSigner.m in Sources */,
 				8821193E1F593B6F003258C6 /* GBAlipayManager.m in Sources */,
 				882119651F593BBF003258C6 /* split.m in Sources */,
+				B24C64021F5CF84800A76F39 /* TiYanViewController.m in Sources */,
 				8821194A1F593B6F003258C6 /* NSData+Base64.m in Sources */,
+				B24C64051F5D1EF500A76F39 /* MapViewController.m in Sources */,
 				8821198C1F5946DD003258C6 /* FindViewController.m in Sources */,
 				8821186B1F5937CA003258C6 /* main.m in Sources */,
 				882119431F593B6F003258C6 /* NSDataEx.m in Sources */,
 				882118E21F5938E5003258C6 /* BasicEncodingRules.m in Sources */,
 				8821194F1F593B6F003258C6 /* Utilities.m in Sources */,
 				882119411F593B6F003258C6 /* DataVerifier.m in Sources */,
+				B24C64081F5D1F2800A76F39 /* PayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

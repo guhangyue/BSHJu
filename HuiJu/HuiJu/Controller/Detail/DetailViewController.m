@@ -9,6 +9,20 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *addressBtn;
+- (IBAction)addressAction:(UIButton *)sender forEvent:(UIEvent *)event;
+@property (weak, nonatomic) IBOutlet UILabel *clubNameLbl;
+@property (weak, nonatomic) IBOutlet UIButton *callingBtn;
+- (IBAction)callingAction:(UIButton *)sender forEvent:(UIEvent *)event;
+@property (weak, nonatomic) IBOutlet UILabel *clubIntroduceLbl;
+@property (weak, nonatomic) IBOutlet UILabel *clubTimeLbl;
+@property (weak, nonatomic) IBOutlet UILabel *clubMemberLbl;
+@property (weak, nonatomic) IBOutlet UILabel *clubSiteLbl;
+@property (weak, nonatomic) IBOutlet UILabel *clubPersonLbl;
+@property (weak, nonatomic) IBOutlet UILabel *eNameLbl;
+@property (weak, nonatomic) IBOutlet UILabel *priceLbl;
+@property (weak, nonatomic) IBOutlet UILabel *saleCountLbl;
+@property (weak, nonatomic) IBOutlet UIImageView *eLogoImage;
 
 @end
 
@@ -34,4 +48,8 @@
 }
 */
 
+- (IBAction)addressAction:(UIButton *)sender forEvent:(UIEvent *)event {
+}
+- (IBAction)callingAction:(UIButton *)sender forEvent:(UIEvent *)event {
+}
 @end
