@@ -66,6 +66,9 @@
 		8862D0921F5A99AB00D828E6 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862D0911F5A99AB00D828E6 /* SignInViewController.m */; };
 		8862D0951F5A99BB00D828E6 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862D0941F5A99BB00D828E6 /* SignUpViewController.m */; };
 		8862D0981F5A99EC00D828E6 /* SheZhi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8862D0971F5A99EC00D828E6 /* SheZhi.storyboard */; };
+		B240F77B1F5D0A1700347E4E /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B240F77A1F5D0A1700347E4E /* CollectionViewController.m */; };
+		B240F77E1F5D0A4400347E4E /* InformationCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B240F77D1F5D0A4400347E4E /* InformationCollectionViewCell.m */; };
+		B24C64021F5CF84800A76F39 /* TiYanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C64011F5CF84800A76F39 /* TiYanViewController.m */; };
 		B990D25BAC48C15119EEBA99 /* libPods-HuiJu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75145C4FBF4BD7AF8AF12F /* libPods-HuiJu.a */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +201,12 @@
 		8862D0931F5A99BB00D828E6 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		8862D0941F5A99BB00D828E6 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		8862D0971F5A99EC00D828E6 /* SheZhi.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SheZhi.storyboard; sourceTree = "<group>"; };
+		B240F7791F5D0A1700347E4E /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		B240F77A1F5D0A1700347E4E /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		B240F77C1F5D0A4400347E4E /* InformationCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationCollectionViewCell.h; sourceTree = "<group>"; };
+		B240F77D1F5D0A4400347E4E /* InformationCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationCollectionViewCell.m; sourceTree = "<group>"; };
+		B24C64001F5CF84800A76F39 /* TiYanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiYanViewController.h; sourceTree = "<group>"; };
+		B24C64011F5CF84800A76F39 /* TiYanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiYanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,6 +501,8 @@
 			children = (
 				882119801F5946D1003258C6 /* DetailViewController.h */,
 				882119811F5946D1003258C6 /* DetailViewController.m */,
+				B24C64001F5CF84800A76F39 /* TiYanViewController.h */,
+				B24C64011F5CF84800A76F39 /* TiYanViewController.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -501,6 +512,8 @@
 			children = (
 				882119841F5946DD003258C6 /* FindViewController.h */,
 				882119851F5946DD003258C6 /* FindViewController.m */,
+				B240F7791F5D0A1700347E4E /* CollectionViewController.h */,
+				B240F77A1F5D0A1700347E4E /* CollectionViewController.m */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -535,6 +548,8 @@
 			isa = PBXGroup;
 			children = (
 				882119921F594791003258C6 /* Find.storyboard */,
+				B240F77C1F5D0A4400347E4E /* InformationCollectionViewCell.h */,
+				B240F77D1F5D0A4400347E4E /* InformationCollectionViewCell.m */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -790,6 +805,7 @@
 				882118E61F5938E5003258C6 /* ViewController.m in Sources */,
 				882119491F593B6F003258C6 /* JSONS.m in Sources */,
 				882119441F593B6F003258C6 /* openssl_wrapper.m in Sources */,
+				B240F77B1F5D0A1700347E4E /* CollectionViewController.m in Sources */,
 				882119451F593B6F003258C6 /* RSADataSigner.m in Sources */,
 				8821198D1F5946DD003258C6 /* HomeViewController.m in Sources */,
 				882118E11F5938E5003258C6 /* HMSegmentedControl.m in Sources */,
@@ -806,6 +822,7 @@
 				882119421F593B6F003258C6 /* MD5DataSigner.m in Sources */,
 				8821193E1F593B6F003258C6 /* GBAlipayManager.m in Sources */,
 				882119651F593BBF003258C6 /* split.m in Sources */,
+				B24C64021F5CF84800A76F39 /* TiYanViewController.m in Sources */,
 				8821194A1F593B6F003258C6 /* NSData+Base64.m in Sources */,
 				8821198C1F5946DD003258C6 /* FindViewController.m in Sources */,
 				8821186B1F5937CA003258C6 /* main.m in Sources */,
@@ -813,6 +830,7 @@
 				882118E21F5938E5003258C6 /* BasicEncodingRules.m in Sources */,
 				8821194F1F593B6F003258C6 /* Utilities.m in Sources */,
 				882119411F593B6F003258C6 /* DataVerifier.m in Sources */,
+				B240F77E1F5D0A4400347E4E /* InformationCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
